@@ -12,6 +12,20 @@ namespace bulletsAndMore
 			recipe.AddIngredient(ItemID.StoneBlock, 1);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.Register();
+
+			recipe = Recipe.Create(ItemID.LesserManaPotion, 1)
+				.AddIngredient(ItemID.GlowingMushroom, 2)
+				.AddIngredient(ItemID.BottledWater, 1)
+				.AddTile(TileID.Bottles)
+				.Register()
+			;
+
+						recipe = Recipe.Create(ItemID.LesserManaPotion, 1)
+				.AddIngredient(ItemID.GlowingMushroom, 2)
+				.AddIngredient(ItemID.BottledWater, 1)
+				.AddTile(TileID.AlchemyTable)
+				.Register()
+			;
 		}
 	}
 }
