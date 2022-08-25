@@ -8,22 +8,30 @@ namespace bulletsAndMore
 	{
 		public override void AddRecipes()
 		{
-			Recipe recipe = Recipe.Create(ItemID.MusketBall, 100);
-			recipe.AddIngredient(ItemID.StoneBlock, 1);
-			recipe.AddTile(TileID.WorkBenches);
-			recipe.Register();
+			Recipe.Create(ItemID.MusketBall, 100)
+				.AddIngredient(ItemID.StoneBlock, 1)
+				.AddTile(TileID.WorkBenches)
+				.Register()
+			;
 
-			recipe = Recipe.Create(ItemID.LesserManaPotion, 1)
+			Recipe.Create(ItemID.LesserManaPotion, 1)
 				.AddIngredient(ItemID.GlowingMushroom, 2)
 				.AddIngredient(ItemID.BottledWater, 1)
 				.AddTile(TileID.Bottles)
 				.Register()
 			;
 
-						recipe = Recipe.Create(ItemID.LesserManaPotion, 1)
+			Recipe.Create(ItemID.LesserManaPotion, 1)
 				.AddIngredient(ItemID.GlowingMushroom, 2)
 				.AddIngredient(ItemID.BottledWater, 1)
 				.AddTile(TileID.AlchemyTable)
+				.Register()
+			;
+
+			Recipe.Create(ItemID.Book, 1)
+				.AddRecipeGroup("Wood", 20)
+				.AddIngredient(ItemID.BottledWater, 2)
+				.AddTile(TileID.WorkBenches)
 				.Register()
 			;
 		}
