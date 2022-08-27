@@ -1,1 +1,1 @@
-Simple bullets and more is a pretty cool mod, it does...this. Modify this file with a description of your mod.
+Bullets and more is a small mod made for fun with no specific ambition other than modify small aspects of Terraria to improve it.
